@@ -1,0 +1,1004 @@
+[0m12:30:39.623591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C106BDFB30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C106BDFD40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C106BDF410>]}
+
+
+============================== 12:30:39.623591 | 4146fd43-16c1-4961-9dd5-5a82e5336fc7 ==============================
+[0m12:30:39.623591 [info ] [MainThread]: Running with dbt=1.7.8
+[0m12:30:39.623591 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\locatellia\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\locatellia\\Desktop\\PROMETEIA\\_____DBT\\Workspaces\\dbt_venv\\TEST\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m12:30:39.623591 [info ] [MainThread]: dbt version: 1.7.8
+[0m12:30:39.623591 [info ] [MainThread]: python version: 3.12.2
+[0m12:30:39.623591 [info ] [MainThread]: python path: C:\Users\locatellia\Desktop\PROMETEIA\_____DBT\Workspaces\dbt_venv\Scripts\python.exe
+[0m12:30:39.637502 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:30:41.398549 [info ] [MainThread]: Using profiles dir at C:\Users\locatellia\.dbt
+[0m12:30:41.398549 [info ] [MainThread]: Using profiles.yml file at C:\Users\locatellia\.dbt\profiles.yml
+[0m12:30:41.406070 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\locatellia\Desktop\PROMETEIA\_____DBT\Workspaces\dbt_venv\TEST\dbt_project.yml
+[0m12:30:41.406070 [info ] [MainThread]: adapter type: databricks
+[0m12:30:41.408091 [info ] [MainThread]: adapter version: 1.7.7
+[0m12:30:41.485918 [info ] [MainThread]: Configuration:
+[0m12:30:41.486918 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:30:41.487912 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:30:41.488912 [info ] [MainThread]: Required dependencies:
+[0m12:30:41.489904 [debug] [MainThread]: Executing "git --help"
+[0m12:30:41.507910 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m12:30:41.507910 [info ] [MainThread]: Connection:
+[0m12:30:41.508901 [info ] [MainThread]:   host: adb-2479192515039192.12.azuredatabricks.net
+[0m12:30:41.509896 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/614ebf1aa0dc02e9
+[0m12:30:41.511890 [info ] [MainThread]:   catalog: dbt-test
+[0m12:30:41.512887 [info ] [MainThread]:   schema: dbt-test-managed-tables
+[0m12:30:41.513883 [info ] [MainThread]: Registered adapter: databricks=1.7.7
+[0m12:30:41.515193 [debug] [MainThread]: Databricks adapter: conn: 1928552114192: Creating DatabricksDBTConnection sess: None, name: debug, idle: 0s, acqrelcnt: 0, lang: None, thrd: (35540, 34140), cmpt: ``, lut: None
+[0m12:30:41.515845 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m12:30:41.515858 [debug] [MainThread]: Databricks adapter: Thread (35540, 34140) using default compute resource.
+[0m12:30:41.516857 [debug] [MainThread]: Databricks adapter: conn: 1928552114192: _acquire sess: None, name: debug, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (35540, 34140), cmpt: ``, lut: 1708083041.5158584
+[0m12:30:41.516857 [debug] [MainThread]: Databricks adapter: conn: 1928552114192: get_thread_connection: sess: None, name: debug, idle: 0.0009992122650146484s, acqrelcnt: 1, lang: None, thrd: (35540, 34140), cmpt: ``, lut: 1708083041.5158584
+[0m12:30:41.517853 [debug] [MainThread]: Databricks adapter: conn: 1928552114192: idle check connection: sess: None, name: debug, idle: 0.0009992122650146484s, acqrelcnt: 1, lang: None, thrd: (35540, 34140), cmpt: ``, lut: 1708083041.5158584
+[0m12:30:41.517853 [debug] [MainThread]: Using databricks connection "debug"
+[0m12:30:41.517853 [debug] [MainThread]: On debug: select 1 as id
+[0m12:30:41.518849 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:30:42.026190 [debug] [MainThread]: Databricks adapter: conn: 1928552114192: session opened sess: 01eeccbe-d23f-1612-af1b-8e717bbf49c1, name: debug, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (35540, 34140), cmpt: ``, lut: 1708083042.0261908
+[0m12:30:42.549543 [debug] [MainThread]: SQL status: OK in 1.0299999713897705 seconds
+[0m12:30:42.549543 [debug] [MainThread]: Databricks adapter: conn: 1928552114192: _release sess: 01eeccbe-d23f-1612-af1b-8e717bbf49c1, name: debug, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (35540, 34140), cmpt: ``, lut: 1708083042.5495436
+[0m12:30:42.549543 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:30:42.549543 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:30:42.549543 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m12:30:42.549543 [debug] [MainThread]: Command `dbt debug` failed at 12:30:42.549543 after 3.00 seconds
+[0m12:30:42.549543 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:30:42.549543 [debug] [MainThread]: On debug: Close
+[0m12:30:42.740718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C106A5BDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C106A9E810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1065064E0>]}
+[0m12:30:42.740718 [debug] [MainThread]: Flushing usage events
+[0m12:30:43.125420 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:31:08.291491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6526377A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E65222D3A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E652634C50>]}
+
+
+============================== 14:31:08.309563 | 4d87f49c-c875-4318-bc4d-b08a4dd47a03 ==============================
+[0m14:31:08.309563 [info ] [MainThread]: Running with dbt=1.7.8
+[0m14:31:08.311518 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\locatellia\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\locatellia\\Desktop\\PROMETEIA\\_____DBT\\Workspaces\\dbt_venv\\TEST\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m14:31:13.092147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4d87f49c-c875-4318-bc4d-b08a4dd47a03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E673D9CC50>]}
+[0m14:31:13.169620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4d87f49c-c875-4318-bc4d-b08a4dd47a03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E673D0DA00>]}
+[0m14:31:13.170615 [info ] [MainThread]: Registered adapter: databricks=1.7.7
+[0m14:31:13.191238 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m14:31:13.789293 [debug] [MainThread]: Partial parsing enabled: 10 files deleted, 25 files added, 2 files changed.
+[0m14:31:13.790289 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\python.sql
+[0m14:31:13.791285 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\persist_docs.sql
+[0m14:31:13.791285 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\catalog.sql
+[0m14:31:13.792282 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\optimize.sql
+[0m14:31:13.793280 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\refresh.sql
+[0m14:31:13.793280 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\drop.sql
+[0m14:31:13.794275 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\get_custom_name\get_custom_database.sql
+[0m14:31:13.795271 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\file_format.sql
+[0m14:31:13.795271 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\create.sql
+[0m14:31:13.796269 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\tblproperties.sql
+[0m14:31:13.796269 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\drop.sql
+[0m14:31:13.796269 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\constraints.sql
+[0m14:31:13.797328 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\refresh.sql
+[0m14:31:13.797328 [debug] [MainThread]: Partial parsing: added file: TEST://models\example\MOVIMENTI_OUTPUT.sql
+[0m14:31:13.798326 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\metadata.sql
+[0m14:31:13.798326 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\create.sql
+[0m14:31:13.799323 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\drop.sql
+[0m14:31:13.799323 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\copy_into.sql
+[0m14:31:13.800321 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\relation.sql
+[0m14:31:13.800321 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\create.sql
+[0m14:31:13.801316 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\drop.sql
+[0m14:31:13.801316 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\create.sql
+[0m14:31:13.802313 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\etc\statement.sql
+[0m14:31:13.802313 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\databricks_catalog.sql
+[0m14:31:13.803310 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\drop.sql
+[0m14:31:13.803310 [debug] [MainThread]: Partial parsing: deleted file: TEST://models\example\my_first_dbt_model.sql
+[0m14:31:13.804307 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\catalog.sql
+[0m14:31:13.804307 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\statement.sql
+[0m14:31:13.805303 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\metadata.sql
+[0m14:31:13.805303 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\refresh_materialized_view.sql
+[0m14:31:13.807425 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\adapters.sql
+[0m14:31:13.808423 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\create_materialized_view_as.sql
+[0m14:31:13.808423 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\python.sql
+[0m14:31:13.809420 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\streaming_table\create_or_refresh_streaming_table_as.sql
+[0m14:31:13.809420 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\copy_into.sql
+[0m14:31:13.810414 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\view.sql
+[0m14:31:13.811413 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\incremental\incremental.sql
+[0m14:31:14.642491 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m14:31:14.725222 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.TEST.my_second_dbt_model' (models\example\my_second_dbt_model.sql) depends on a node named 'my_first_dbt_model' which was not found
+[0m14:31:14.727212 [debug] [MainThread]: Command `dbt run` failed at 14:31:14.727212 after 6.51 seconds
+[0m14:31:14.728212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E652440AA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E67461FBC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6747186B0>]}
+[0m14:31:14.728212 [debug] [MainThread]: Flushing usage events
+[0m14:31:15.224040 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:31:53.022332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F29807740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F29807770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F298054F0>]}
+
+
+============================== 14:31:53.029420 | e978a671-8145-47c6-985b-5fdb4f47da78 ==============================
+[0m14:31:53.029420 [info ] [MainThread]: Running with dbt=1.7.8
+[0m14:31:53.030418 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\locatellia\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\locatellia\\Desktop\\PROMETEIA\\_____DBT\\Workspaces\\dbt_venv\\TEST\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:31:54.740561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e978a671-8145-47c6-985b-5fdb4f47da78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F298044A0>]}
+[0m14:31:54.818963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e978a671-8145-47c6-985b-5fdb4f47da78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F4AE7AD50>]}
+[0m14:31:54.819968 [info ] [MainThread]: Registered adapter: databricks=1.7.7
+[0m14:31:54.831992 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m14:31:54.995349 [debug] [MainThread]: Partial parsing enabled: 10 files deleted, 25 files added, 3 files changed.
+[0m14:31:54.996402 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\constraints.sql
+[0m14:31:54.996402 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\drop.sql
+[0m14:31:54.997403 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\refresh.sql
+[0m14:31:54.997403 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\drop.sql
+[0m14:31:54.998399 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\metadata.sql
+[0m14:31:54.998399 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\create.sql
+[0m14:31:54.999392 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\databricks_catalog.sql
+[0m14:31:54.999392 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\get_custom_name\get_custom_database.sql
+[0m14:31:55.000392 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\python.sql
+[0m14:31:55.000392 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\file_format.sql
+[0m14:31:55.001386 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\refresh.sql
+[0m14:31:55.001386 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\drop.sql
+[0m14:31:55.002382 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\catalog.sql
+[0m14:31:55.002382 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\copy_into.sql
+[0m14:31:55.002382 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\optimize.sql
+[0m14:31:55.003382 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\tblproperties.sql
+[0m14:31:55.003382 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\relation.sql
+[0m14:31:55.004379 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\create.sql
+[0m14:31:55.004379 [debug] [MainThread]: Partial parsing: added file: TEST://models\example\MOVIMENTI_OUTPUT.sql
+[0m14:31:55.005403 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\persist_docs.sql
+[0m14:31:55.005419 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\drop.sql
+[0m14:31:55.005419 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\etc\statement.sql
+[0m14:31:55.006416 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\drop.sql
+[0m14:31:55.006416 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\create.sql
+[0m14:31:55.007413 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\create.sql
+[0m14:31:55.008413 [debug] [MainThread]: Partial parsing: updated file: TEST://models\example\schema.yml
+[0m14:31:55.008413 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\catalog.sql
+[0m14:31:55.009406 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\python.sql
+[0m14:31:55.011404 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\adapters.sql
+[0m14:31:55.011404 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\metadata.sql
+[0m14:31:55.012400 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\statement.sql
+[0m14:31:55.012400 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\create_materialized_view_as.sql
+[0m14:31:55.013393 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\copy_into.sql
+[0m14:31:55.013393 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\refresh_materialized_view.sql
+[0m14:31:55.014393 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\streaming_table\create_or_refresh_streaming_table_as.sql
+[0m14:31:55.014393 [debug] [MainThread]: Partial parsing: deleted file: TEST://models\example\my_first_dbt_model.sql
+[0m14:31:55.015390 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\incremental\incremental.sql
+[0m14:31:55.015390 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\view.sql
+[0m14:31:55.830769 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.TEST.my_second_dbt_model' (models\example\my_second_dbt_model.sql) depends on a node named 'my_first_dbt_model' which was not found
+[0m14:31:55.832763 [debug] [MainThread]: Command `dbt run` failed at 14:31:55.832763 after 2.87 seconds
+[0m14:31:55.833759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F295DF5F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F4B315910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F4B61BE30>]}
+[0m14:31:55.833759 [debug] [MainThread]: Flushing usage events
+[0m14:31:56.218115 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:32:39.813692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D31D1074D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D31D104D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D31D107350>]}
+
+
+============================== 14:32:39.819872 | 9ba046aa-c70f-403d-af47-9d72a3bf109b ==============================
+[0m14:32:39.819872 [info ] [MainThread]: Running with dbt=1.7.8
+[0m14:32:39.820869 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\locatellia\\.dbt', 'log_path': 'C:\\Users\\locatellia\\Desktop\\PROMETEIA\\_____DBT\\Workspaces\\dbt_venv\\TEST\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:32:41.566468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9ba046aa-c70f-403d-af47-9d72a3bf109b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D33E64F140>]}
+[0m14:32:41.635041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9ba046aa-c70f-403d-af47-9d72a3bf109b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D31D1587A0>]}
+[0m14:32:41.636038 [info ] [MainThread]: Registered adapter: databricks=1.7.7
+[0m14:32:41.649312 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m14:32:41.811247 [debug] [MainThread]: Partial parsing enabled: 9 files deleted, 24 files added, 2 files changed.
+[0m14:32:41.811247 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\create.sql
+[0m14:32:41.812244 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\create.sql
+[0m14:32:41.812244 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\get_custom_name\get_custom_database.sql
+[0m14:32:41.813237 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\drop.sql
+[0m14:32:41.814237 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\constraints.sql
+[0m14:32:41.814237 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\optimize.sql
+[0m14:32:41.815234 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\etc\statement.sql
+[0m14:32:41.815234 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\drop.sql
+[0m14:32:41.816231 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\persist_docs.sql
+[0m14:32:41.816231 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\refresh.sql
+[0m14:32:41.816231 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\copy_into.sql
+[0m14:32:41.817223 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\tblproperties.sql
+[0m14:32:41.817223 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\drop.sql
+[0m14:32:41.818220 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\drop.sql
+[0m14:32:41.818220 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\relation.sql
+[0m14:32:41.818220 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\create.sql
+[0m14:32:41.819216 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\drop.sql
+[0m14:32:41.819216 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\file_format.sql
+[0m14:32:41.820217 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\catalog.sql
+[0m14:32:41.820373 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\python.sql
+[0m14:32:41.822370 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\create.sql
+[0m14:32:41.822370 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\databricks_catalog.sql
+[0m14:32:41.823370 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\metadata.sql
+[0m14:32:41.823370 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\refresh.sql
+[0m14:32:41.824364 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\streaming_table\create_or_refresh_streaming_table_as.sql
+[0m14:32:41.824364 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\create_materialized_view_as.sql
+[0m14:32:41.825360 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\statement.sql
+[0m14:32:41.825360 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\copy_into.sql
+[0m14:32:41.826358 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\python.sql
+[0m14:32:41.827354 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\metadata.sql
+[0m14:32:41.827354 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\catalog.sql
+[0m14:32:41.828520 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\adapters.sql
+[0m14:32:41.829520 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\refresh_materialized_view.sql
+[0m14:32:41.829520 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\view.sql
+[0m14:32:41.829520 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\incremental\incremental.sql
+[0m14:32:42.462720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9ba046aa-c70f-403d-af47-9d72a3bf109b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D33EA540B0>]}
+[0m14:32:42.507596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9ba046aa-c70f-403d-af47-9d72a3bf109b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D33EB18710>]}
+[0m14:32:42.508593 [info ] [MainThread]: Found 1 model, 2 tests, 0 sources, 0 exposures, 0 metrics, 535 macros, 0 groups, 0 semantic models
+[0m14:32:42.509593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9ba046aa-c70f-403d-af47-9d72a3bf109b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D31D139C10>]}
+[0m14:32:42.511582 [info ] [MainThread]: 
+[0m14:32:42.513579 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: Creating DatabricksDBTConnection sess: None, name: master, idle: 0s, acqrelcnt: 0, lang: None, thrd: (3364, 37252), cmpt: ``, lut: None
+[0m14:32:42.513579 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m14:32:42.514572 [debug] [MainThread]: Databricks adapter: Thread (3364, 37252) using default compute resource.
+[0m14:32:42.514572 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: _acquire sess: None, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090362.5145729
+[0m14:32:42.516570 [debug] [ThreadPool]: Databricks adapter: conn: 3106313176656: Creating DatabricksDBTConnection sess: None, name: list_dbt-test, idle: 0s, acqrelcnt: 0, lang: None, thrd: (3364, 5228), cmpt: ``, lut: None
+[0m14:32:42.516570 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt-test'
+[0m14:32:42.517562 [debug] [ThreadPool]: Databricks adapter: Thread (3364, 5228) using default compute resource.
+[0m14:32:42.517562 [debug] [ThreadPool]: Databricks adapter: conn: 3106313176656: _acquire sess: None, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (3364, 5228), cmpt: ``, lut: 1708090362.5175624
+[0m14:32:42.518559 [debug] [ThreadPool]: Databricks adapter: conn: 3106313176656: get_thread_connection: sess: None, name: list_dbt-test, idle: 0.0009965896606445312s, acqrelcnt: 1, lang: None, thrd: (3364, 5228), cmpt: ``, lut: 1708090362.5175624
+[0m14:32:42.518559 [debug] [ThreadPool]: Databricks adapter: conn: 3106313176656: idle check connection: sess: None, name: list_dbt-test, idle: 0.0009965896606445312s, acqrelcnt: 1, lang: None, thrd: (3364, 5228), cmpt: ``, lut: 1708090362.5175624
+[0m14:32:42.519628 [debug] [ThreadPool]: Using databricks connection "list_dbt-test"
+[0m14:32:42.519628 [debug] [ThreadPool]: On list_dbt-test: GetSchemas(database=dbt-test, schema=None)
+[0m14:32:42.519628 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:32:42.903167 [debug] [ThreadPool]: Databricks adapter: conn: 3106313176656: session opened sess: 01eecccf-ddf8-1cc4-b3ff-40e85ecfbbfc, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (3364, 5228), cmpt: ``, lut: 1708090362.9031675
+[0m14:32:43.550768 [debug] [ThreadPool]: SQL status: OK in 1.0299999713897705 seconds
+[0m14:32:43.560921 [debug] [ThreadPool]: Databricks adapter: conn: 3106313176656: _release sess: 01eecccf-ddf8-1cc4-b3ff-40e85ecfbbfc, name: list_dbt-test, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (3364, 5228), cmpt: ``, lut: 1708090363.5606136
+[0m14:32:43.563455 [debug] [ThreadPool]: Databricks adapter: conn: 3106313186400: Creating DatabricksDBTConnection sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0s, acqrelcnt: 0, lang: None, thrd: (3364, 9764), cmpt: ``, lut: None
+[0m14:32:43.564469 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt-test_dbt-test-managed-tables'
+[0m14:32:43.564469 [debug] [ThreadPool]: Databricks adapter: Thread (3364, 9764) using default compute resource.
+[0m14:32:43.565469 [debug] [ThreadPool]: Databricks adapter: conn: 3106313186400: _acquire sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (3364, 9764), cmpt: ``, lut: 1708090363.5654693
+[0m14:32:43.571768 [debug] [ThreadPool]: Databricks adapter: conn: 3106313186400: get_thread_connection: sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.006299257278442383s, acqrelcnt: 1, lang: None, thrd: (3364, 9764), cmpt: ``, lut: 1708090363.5654693
+[0m14:32:43.572763 [debug] [ThreadPool]: Databricks adapter: conn: 3106313186400: idle check connection: sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.007294178009033203s, acqrelcnt: 1, lang: None, thrd: (3364, 9764), cmpt: ``, lut: 1708090363.5654693
+[0m14:32:43.573756 [debug] [ThreadPool]: Using databricks connection "list_dbt-test_dbt-test-managed-tables"
+[0m14:32:43.574753 [debug] [ThreadPool]: On list_dbt-test_dbt-test-managed-tables: GetTables(database=dbt-test, schema=dbt-test-managed-tables, identifier=None)
+[0m14:32:43.574753 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:32:43.925809 [debug] [ThreadPool]: Databricks adapter: conn: 3106313186400: session opened sess: 01eecccf-de95-10eb-9528-c34ba37e9365, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (3364, 9764), cmpt: ``, lut: 1708090363.9248135
+[0m14:32:44.612765 [debug] [ThreadPool]: SQL status: OK in 1.0399999618530273 seconds
+[0m14:32:44.618409 [debug] [ThreadPool]: Databricks adapter: conn: 3106313186400: _release sess: 01eecccf-de95-10eb-9528-c34ba37e9365, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (3364, 9764), cmpt: ``, lut: 1708090364.6184094
+[0m14:32:44.619613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9ba046aa-c70f-403d-af47-9d72a3bf109b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D33EBE14C0>]}
+[0m14:32:44.620613 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: get_thread_connection: sess: None, name: master, idle: 2.1060409545898438s, acqrelcnt: 1, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090362.5145729
+[0m14:32:44.620613 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: idle check connection: sess: None, name: master, idle: 2.1060409545898438s, acqrelcnt: 1, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090362.5145729
+[0m14:32:44.620613 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: get_thread_connection: sess: None, name: master, idle: 2.1060409545898438s, acqrelcnt: 1, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090362.5145729
+[0m14:32:44.621610 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: idle check connection: sess: None, name: master, idle: 2.10703706741333s, acqrelcnt: 1, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090362.5145729
+[0m14:32:44.621610 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m14:32:44.622606 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m14:32:44.622606 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: _release sess: None, name: master, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090364.6226068
+[0m14:32:44.623603 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:32:44.625626 [info ] [MainThread]: 
+[0m14:32:44.648287 [debug] [Thread-1 (]: Began running node model.TEST.MOVIMENTI_OUTPUT
+[0m14:32:44.649295 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt-test-managed-tables.MOVIMENTI_OUTPUT .......... [RUN]
+[0m14:32:44.652276 [debug] [Thread-1 (]: Databricks adapter: conn: 3106309191872: Creating DatabricksDBTConnection sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0s, acqrelcnt: 0, lang: None, thrd: (3364, 40248), cmpt: ``, lut: None
+[0m14:32:44.653323 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.TEST.MOVIMENTI_OUTPUT'
+[0m14:32:44.653408 [debug] [Thread-1 (]: Databricks adapter: On thread (3364, 40248): `dbt-test`.`dbt-test-managed-tables`.`MOVIMENTI_OUTPUT` using default compute resource.
+[0m14:32:44.653408 [debug] [Thread-1 (]: Databricks adapter: conn: 3106309191872: _acquire sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 1, lang: sql, thrd: (3364, 40248), cmpt: ``, lut: 1708090364.653408
+[0m14:32:44.654408 [debug] [Thread-1 (]: Began compiling node model.TEST.MOVIMENTI_OUTPUT
+[0m14:32:44.661384 [debug] [Thread-1 (]: Writing injected SQL for node "model.TEST.MOVIMENTI_OUTPUT"
+[0m14:32:44.670380 [debug] [Thread-1 (]: Timing info for model.TEST.MOVIMENTI_OUTPUT (compile): 14:32:44.654408 => 14:32:44.670380
+[0m14:32:44.671378 [debug] [Thread-1 (]: Began executing node model.TEST.MOVIMENTI_OUTPUT
+[0m14:32:44.722730 [debug] [Thread-1 (]: Writing runtime sql for node "model.TEST.MOVIMENTI_OUTPUT"
+[0m14:32:44.730111 [debug] [Thread-1 (]: Databricks adapter: conn: 3106309191872: get_thread_connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.07670354843139648s, acqrelcnt: 1, lang: sql, thrd: (3364, 40248), cmpt: ``, lut: 1708090364.653408
+[0m14:32:44.731579 [debug] [Thread-1 (]: Databricks adapter: conn: 3106309191872: idle check connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.07776856422424316s, acqrelcnt: 1, lang: sql, thrd: (3364, 40248), cmpt: ``, lut: 1708090364.653408
+[0m14:32:44.731579 [debug] [Thread-1 (]: Databricks adapter: conn: 3106309191872: get_thread_connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0781710147857666s, acqrelcnt: 1, lang: sql, thrd: (3364, 40248), cmpt: ``, lut: 1708090364.653408
+[0m14:32:44.732828 [debug] [Thread-1 (]: Databricks adapter: conn: 3106309191872: idle check connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.07941985130310059s, acqrelcnt: 1, lang: sql, thrd: (3364, 40248), cmpt: ``, lut: 1708090364.653408
+[0m14:32:44.733762 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m14:32:44.733762 [debug] [Thread-1 (]: Using databricks connection "model.TEST.MOVIMENTI_OUTPUT"
+[0m14:32:44.733762 [debug] [Thread-1 (]: On model.TEST.MOVIMENTI_OUTPUT: /* {"app": "dbt", "dbt_version": "1.7.8", "dbt_databricks_version": "1.7.7", "databricks_sql_connector_version": "2.9.3", "profile_name": "TEST", "target_name": "dev", "node_id": "model.TEST.MOVIMENTI_OUTPUT"} */
+
+  
+    
+        create or replace table `dbt-test`.`dbt-test-managed-tables`.`MOVIMENTI_OUTPUT`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with MOVIMENTI_OUTPUT as (
+
+    select *
+    from `ext-tables`.movimenti
+
+)
+
+select *
+from MOVIMENTI_OUTPUT
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  
+[0m14:32:44.734759 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:32:44.994152 [debug] [Thread-1 (]: Databricks adapter: conn: 3106309191872: session opened sess: 01eecccf-df3a-13b5-bcba-2709485033fa, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 1, lang: sql, thrd: (3364, 40248), cmpt: ``, lut: 1708090364.9941523
+[0m14:34:02.012343 [debug] [Thread-1 (]: SQL status: OK in 77.27999877929688 seconds
+[0m14:34:02.176745 [debug] [Thread-1 (]: Timing info for model.TEST.MOVIMENTI_OUTPUT (execute): 14:32:44.672391 => 14:34:02.176745
+[0m14:34:02.177598 [debug] [Thread-1 (]: Databricks adapter: conn: 3106309191872: _release sess: 01eecccf-df3a-13b5-bcba-2709485033fa, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 0, lang: sql, thrd: (3364, 40248), cmpt: ``, lut: 1708090442.1775987
+[0m14:34:02.178595 [debug] [Thread-1 (]: Databricks adapter: conn: 3106309191872: _release sess: 01eecccf-df3a-13b5-bcba-2709485033fa, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 0, lang: sql, thrd: (3364, 40248), cmpt: ``, lut: 1708090442.1785955
+[0m14:34:02.178595 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ba046aa-c70f-403d-af47-9d72a3bf109b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D33E7AD790>]}
+[0m14:34:02.179588 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt-test-managed-tables.MOVIMENTI_OUTPUT ..... [[32mOK[0m in 77.53s]
+[0m14:34:02.180588 [debug] [Thread-1 (]: Finished running node model.TEST.MOVIMENTI_OUTPUT
+[0m14:34:02.182578 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: idle check connection: sess: None, name: master, idle: 77.55997157096863s, acqrelcnt: 0, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090364.6226068
+[0m14:34:02.183578 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: reusing connection master sess: None, name: master, idle: 77.56097221374512s, acqrelcnt: 0, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090364.6226068
+[0m14:34:02.184576 [debug] [MainThread]: Databricks adapter: Thread (3364, 37252) using default compute resource.
+[0m14:34:02.185095 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: _acquire sess: None, name: master, idle: 77.56248807907104s, acqrelcnt: 1, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090364.6226068
+[0m14:34:02.185575 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: get_thread_connection: sess: None, name: master, idle: 77.56296873092651s, acqrelcnt: 1, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090364.6226068
+[0m14:34:02.185575 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: idle check connection: sess: None, name: master, idle: 77.56296873092651s, acqrelcnt: 1, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090364.6226068
+[0m14:34:02.186987 [debug] [MainThread]: On master: ROLLBACK
+[0m14:34:02.186987 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:34:02.453015 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: session opened sess: 01eeccd0-0d64-1d88-ac09-6637c389b5b4, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090442.453015
+[0m14:34:02.455016 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m14:34:02.455962 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: get_thread_connection: sess: 01eeccd0-0d64-1d88-ac09-6637c389b5b4, name: master, idle: 0.002947092056274414s, acqrelcnt: 1, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090442.453015
+[0m14:34:02.455962 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: idle check connection: sess: 01eeccd0-0d64-1d88-ac09-6637c389b5b4, name: master, idle: 0.002947092056274414s, acqrelcnt: 1, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090442.453015
+[0m14:34:02.457022 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m14:34:02.457022 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m14:34:02.457022 [debug] [MainThread]: Databricks adapter: conn: 3106313179248: _release sess: 01eeccd0-0d64-1d88-ac09-6637c389b5b4, name: master, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (3364, 37252), cmpt: ``, lut: 1708090442.4570222
+[0m14:34:02.457953 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:34:02.458950 [debug] [MainThread]: On master: ROLLBACK
+[0m14:34:02.458950 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m14:34:02.458950 [debug] [MainThread]: On master: Close
+[0m14:34:02.529561 [debug] [MainThread]: Connection 'list_dbt-test' was properly closed.
+[0m14:34:02.530569 [debug] [MainThread]: On list_dbt-test: Close
+[0m14:34:02.601505 [debug] [MainThread]: Connection 'list_dbt-test_dbt-test-managed-tables' was properly closed.
+[0m14:34:02.601562 [debug] [MainThread]: On list_dbt-test_dbt-test-managed-tables: Close
+[0m14:34:02.681830 [debug] [MainThread]: Connection 'model.TEST.MOVIMENTI_OUTPUT' was properly closed.
+[0m14:34:02.682827 [debug] [MainThread]: On model.TEST.MOVIMENTI_OUTPUT: ROLLBACK
+[0m14:34:02.682827 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m14:34:02.683824 [debug] [MainThread]: On model.TEST.MOVIMENTI_OUTPUT: Close
+[0m14:34:02.763513 [info ] [MainThread]: 
+[0m14:34:02.764512 [info ] [MainThread]: Finished running 1 table model in 0 hours 1 minutes and 20.25 seconds (80.25s).
+[0m14:34:02.765506 [debug] [MainThread]: Command end result
+[0m14:34:02.808612 [info ] [MainThread]: 
+[0m14:34:02.809612 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:34:02.810606 [info ] [MainThread]: 
+[0m14:34:02.811602 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:34:02.813596 [debug] [MainThread]: Command `dbt run` succeeded at 14:34:02.813596 after 83.06 seconds
+[0m14:34:02.813596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D31B6A9DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D33E6965A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D31CB03DA0>]}
+[0m14:34:02.814592 [debug] [MainThread]: Flushing usage events
+[0m14:34:03.195557 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m15:29:13.669413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCB98072F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCB9807DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCB9807050>]}
+
+
+============================== 15:29:13.677982 | 5a84f043-b398-4773-83ac-887b39bc18d5 ==============================
+[0m15:29:13.677982 [info ] [MainThread]: Running with dbt=1.7.8
+[0m15:29:13.677982 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\locatellia\\.dbt', 'log_path': 'C:\\Users\\locatellia\\Desktop\\PROMETEIA\\_____DBT\\Workspaces\\dbt_venv\\TEST\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select movimenti_output', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:29:16.360733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5a84f043-b398-4773-83ac-887b39bc18d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCDADE02C0>]}
+[0m15:29:16.458174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5a84f043-b398-4773-83ac-887b39bc18d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCDAD4F530>]}
+[0m15:29:16.459171 [info ] [MainThread]: Registered adapter: databricks=1.7.7
+[0m15:29:16.473291 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m15:29:16.959517 [debug] [MainThread]: Partial parsing enabled: 9 files deleted, 24 files added, 2 files changed.
+[0m15:29:16.959517 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\refresh.sql
+[0m15:29:16.959517 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\constraints.sql
+[0m15:29:16.959517 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\optimize.sql
+[0m15:29:16.959517 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\python.sql
+[0m15:29:16.967576 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\create.sql
+[0m15:29:16.968086 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\refresh.sql
+[0m15:29:16.968325 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\drop.sql
+[0m15:29:16.968325 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\metadata.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\create.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\create.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\catalog.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\tblproperties.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\create.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\drop.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\drop.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\drop.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\persist_docs.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\copy_into.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\file_format.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\etc\statement.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\drop.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\databricks_catalog.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\get_custom_name\get_custom_database.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\relation.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\catalog.sql
+[0m15:29:16.969854 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\copy_into.sql
+[0m15:29:16.977873 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\refresh_materialized_view.sql
+[0m15:29:16.977873 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\statement.sql
+[0m15:29:16.977873 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\metadata.sql
+[0m15:29:16.977873 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\create_materialized_view_as.sql
+[0m15:29:16.979901 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\streaming_table\create_or_refresh_streaming_table_as.sql
+[0m15:29:16.979901 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\python.sql
+[0m15:29:16.979901 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\adapters.sql
+[0m15:29:16.979901 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\incremental\incremental.sql
+[0m15:29:16.983694 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\view.sql
+[0m15:29:17.541356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5a84f043-b398-4773-83ac-887b39bc18d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCDB263FE0>]}
+[0m15:29:17.584234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5a84f043-b398-4773-83ac-887b39bc18d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCDAFBF050>]}
+[0m15:29:17.584234 [info ] [MainThread]: Found 1 model, 2 tests, 0 sources, 0 exposures, 0 metrics, 535 macros, 0 groups, 0 semantic models
+[0m15:29:17.592279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5a84f043-b398-4773-83ac-887b39bc18d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCDB2EC140>]}
+[0m15:29:17.592279 [warn ] [MainThread]: The selection criterion 'movimenti_output' does not match any nodes
+[0m15:29:17.594289 [info ] [MainThread]: 
+[0m15:29:17.594289 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:29:17.594289 [debug] [MainThread]: Command end result
+[0m15:29:17.634819 [debug] [MainThread]: Command `dbt run` succeeded at 15:29:17.634819 after 4.03 seconds
+[0m15:29:17.634819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCB8C68C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCB6421490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCDAE1B1D0>]}
+[0m15:29:17.634819 [debug] [MainThread]: Flushing usage events
+[0m15:29:18.071281 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m15:29:45.307057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B517404B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B517404110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B517407E00>]}
+
+
+============================== 15:29:45.307057 | 1c1b5b4c-3252-41bd-97a5-8749fbf8da4b ==============================
+[0m15:29:45.307057 [info ] [MainThread]: Running with dbt=1.7.8
+[0m15:29:45.315112 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\locatellia\\.dbt', 'log_path': 'C:\\Users\\locatellia\\Desktop\\PROMETEIA\\_____DBT\\Workspaces\\dbt_venv\\TEST\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:29:47.087099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1c1b5b4c-3252-41bd-97a5-8749fbf8da4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5174061E0>]}
+[0m15:29:47.167418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1c1b5b4c-3252-41bd-97a5-8749fbf8da4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5389E5880>]}
+[0m15:29:47.167418 [info ] [MainThread]: Registered adapter: databricks=1.7.7
+[0m15:29:47.188074 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m15:29:47.350377 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:29:47.350377 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:29:47.360435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1c1b5b4c-3252-41bd-97a5-8749fbf8da4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B538C2EF30>]}
+[0m15:29:47.400923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1c1b5b4c-3252-41bd-97a5-8749fbf8da4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B538CAC470>]}
+[0m15:29:47.400923 [info ] [MainThread]: Found 1 model, 2 tests, 0 sources, 0 exposures, 0 metrics, 535 macros, 0 groups, 0 semantic models
+[0m15:29:47.400923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1c1b5b4c-3252-41bd-97a5-8749fbf8da4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B538CAFFE0>]}
+[0m15:29:47.400923 [info ] [MainThread]: 
+[0m15:29:47.400923 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: Creating DatabricksDBTConnection sess: None, name: master, idle: 0s, acqrelcnt: 0, lang: None, thrd: (24692, 21720), cmpt: ``, lut: None
+[0m15:29:47.400923 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m15:29:47.400923 [debug] [MainThread]: Databricks adapter: Thread (24692, 21720) using default compute resource.
+[0m15:29:47.400923 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: _acquire sess: None, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093787.4009237
+[0m15:29:47.410432 [debug] [ThreadPool]: Databricks adapter: conn: 1877853521392: Creating DatabricksDBTConnection sess: None, name: list_dbt-test, idle: 0s, acqrelcnt: 0, lang: None, thrd: (24692, 25180), cmpt: ``, lut: None
+[0m15:29:47.410965 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt-test'
+[0m15:29:47.410965 [debug] [ThreadPool]: Databricks adapter: Thread (24692, 25180) using default compute resource.
+[0m15:29:47.411940 [debug] [ThreadPool]: Databricks adapter: conn: 1877853521392: _acquire sess: None, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (24692, 25180), cmpt: ``, lut: 1708093787.4119406
+[0m15:29:47.411940 [debug] [ThreadPool]: Databricks adapter: conn: 1877853521392: get_thread_connection: sess: None, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (24692, 25180), cmpt: ``, lut: 1708093787.4119406
+[0m15:29:47.412936 [debug] [ThreadPool]: Databricks adapter: conn: 1877853521392: idle check connection: sess: None, name: list_dbt-test, idle: 0.0009958744049072266s, acqrelcnt: 1, lang: None, thrd: (24692, 25180), cmpt: ``, lut: 1708093787.4119406
+[0m15:29:47.412936 [debug] [ThreadPool]: Using databricks connection "list_dbt-test"
+[0m15:29:47.414296 [debug] [ThreadPool]: On list_dbt-test: GetSchemas(database=dbt-test, schema=None)
+[0m15:29:47.414359 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:29:47.765303 [debug] [ThreadPool]: Databricks adapter: conn: 1877853521392: session opened sess: 01eeccd7-d765-10ed-8842-0e49930dbb5f, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (24692, 25180), cmpt: ``, lut: 1708093787.7653034
+[0m15:29:48.336556 [debug] [ThreadPool]: SQL status: OK in 0.9200000166893005 seconds
+[0m15:29:48.346644 [debug] [ThreadPool]: Databricks adapter: conn: 1877853521392: _release sess: 01eeccd7-d765-10ed-8842-0e49930dbb5f, name: list_dbt-test, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (24692, 25180), cmpt: ``, lut: 1708093788.3466442
+[0m15:29:48.346644 [debug] [ThreadPool]: Databricks adapter: conn: 1877853531760: Creating DatabricksDBTConnection sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0s, acqrelcnt: 0, lang: None, thrd: (24692, 3764), cmpt: ``, lut: None
+[0m15:29:48.346644 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt-test_dbt-test-managed-tables'
+[0m15:29:48.346644 [debug] [ThreadPool]: Databricks adapter: Thread (24692, 3764) using default compute resource.
+[0m15:29:48.346644 [debug] [ThreadPool]: Databricks adapter: conn: 1877853531760: _acquire sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (24692, 3764), cmpt: ``, lut: 1708093788.3466442
+[0m15:29:48.354656 [debug] [ThreadPool]: Databricks adapter: conn: 1877853531760: get_thread_connection: sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.008012533187866211s, acqrelcnt: 1, lang: None, thrd: (24692, 3764), cmpt: ``, lut: 1708093788.3466442
+[0m15:29:48.356686 [debug] [ThreadPool]: Databricks adapter: conn: 1877853531760: idle check connection: sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.010042667388916016s, acqrelcnt: 1, lang: None, thrd: (24692, 3764), cmpt: ``, lut: 1708093788.3466442
+[0m15:29:48.356686 [debug] [ThreadPool]: Using databricks connection "list_dbt-test_dbt-test-managed-tables"
+[0m15:29:48.356686 [debug] [ThreadPool]: On list_dbt-test_dbt-test-managed-tables: GetTables(database=dbt-test, schema=dbt-test-managed-tables, identifier=None)
+[0m15:29:48.356686 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:29:48.731171 [debug] [ThreadPool]: Databricks adapter: conn: 1877853531760: session opened sess: 01eeccd7-d7f3-16f9-9993-acef77838e1c, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (24692, 3764), cmpt: ``, lut: 1708093788.7311716
+[0m15:29:49.188054 [debug] [ThreadPool]: SQL status: OK in 0.8299999833106995 seconds
+[0m15:29:49.188054 [debug] [ThreadPool]: Databricks adapter: conn: 1877853531760: _release sess: 01eeccd7-d7f3-16f9-9993-acef77838e1c, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (24692, 3764), cmpt: ``, lut: 1708093789.188054
+[0m15:29:49.188054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1c1b5b4c-3252-41bd-97a5-8749fbf8da4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B51662A9C0>]}
+[0m15:29:49.188054 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: get_thread_connection: sess: None, name: master, idle: 1.787130355834961s, acqrelcnt: 1, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093787.4009237
+[0m15:29:49.188054 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: idle check connection: sess: None, name: master, idle: 1.787130355834961s, acqrelcnt: 1, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093787.4009237
+[0m15:29:49.188054 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: get_thread_connection: sess: None, name: master, idle: 1.787130355834961s, acqrelcnt: 1, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093787.4009237
+[0m15:29:49.188054 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: idle check connection: sess: None, name: master, idle: 1.787130355834961s, acqrelcnt: 1, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093787.4009237
+[0m15:29:49.188054 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m15:29:49.188054 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m15:29:49.188054 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: _release sess: None, name: master, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093789.188054
+[0m15:29:49.188054 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:29:49.203678 [info ] [MainThread]: 
+[0m15:29:49.203678 [debug] [Thread-1 (]: Began running node model.TEST.MOVIMENTI_OUTPUT
+[0m15:29:49.219241 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt-test-managed-tables.MOVIMENTI_OUTPUT .......... [RUN]
+[0m15:29:49.221629 [debug] [Thread-1 (]: Databricks adapter: conn: 1877853344432: Creating DatabricksDBTConnection sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0s, acqrelcnt: 0, lang: None, thrd: (24692, 37768), cmpt: ``, lut: None
+[0m15:29:49.221629 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.TEST.MOVIMENTI_OUTPUT'
+[0m15:29:49.222744 [debug] [Thread-1 (]: Databricks adapter: On thread (24692, 37768): `dbt-test`.`dbt-test-managed-tables`.`MOVIMENTI_OUTPUT` using default compute resource.
+[0m15:29:49.223621 [debug] [Thread-1 (]: Databricks adapter: conn: 1877853344432: _acquire sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 1, lang: sql, thrd: (24692, 37768), cmpt: ``, lut: 1708093789.2236218
+[0m15:29:49.223621 [debug] [Thread-1 (]: Began compiling node model.TEST.MOVIMENTI_OUTPUT
+[0m15:29:49.308363 [debug] [Thread-1 (]: Writing injected SQL for node "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:29:49.313347 [debug] [Thread-1 (]: Timing info for model.TEST.MOVIMENTI_OUTPUT (compile): 15:29:49.224618 => 15:29:49.313347
+[0m15:29:49.314343 [debug] [Thread-1 (]: Began executing node model.TEST.MOVIMENTI_OUTPUT
+[0m15:29:49.332720 [debug] [Thread-1 (]: Databricks adapter: conn: 1877853344432: get_thread_connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.10909914970397949s, acqrelcnt: 1, lang: sql, thrd: (24692, 37768), cmpt: ``, lut: 1708093789.2236218
+[0m15:29:49.333431 [debug] [Thread-1 (]: Databricks adapter: conn: 1877853344432: idle check connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.10980916023254395s, acqrelcnt: 1, lang: sql, thrd: (24692, 37768), cmpt: ``, lut: 1708093789.2236218
+[0m15:29:49.333431 [debug] [Thread-1 (]: Databricks adapter: conn: 1877853344432: get_thread_connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.10980916023254395s, acqrelcnt: 1, lang: sql, thrd: (24692, 37768), cmpt: ``, lut: 1708093789.2236218
+[0m15:29:49.333431 [debug] [Thread-1 (]: Databricks adapter: conn: 1877853344432: idle check connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.10980916023254395s, acqrelcnt: 1, lang: sql, thrd: (24692, 37768), cmpt: ``, lut: 1708093789.2236218
+[0m15:29:49.333431 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m15:29:49.333431 [debug] [Thread-1 (]: Using databricks connection "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:29:49.333431 [debug] [Thread-1 (]: On model.TEST.MOVIMENTI_OUTPUT: /* {"app": "dbt", "dbt_version": "1.7.8", "dbt_databricks_version": "1.7.7", "databricks_sql_connector_version": "2.9.3", "profile_name": "TEST", "target_name": "dev", "node_id": "model.TEST.MOVIMENTI_OUTPUT"} */
+
+      describe extended `dbt-test`.`dbt-test-managed-tables`.`movimenti_output`
+  
+[0m15:29:49.333431 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:29:49.644524 [debug] [Thread-1 (]: Databricks adapter: conn: 1877853344432: session opened sess: 01eeccd7-d885-1ea8-9670-aeae79f7b0f9, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 1, lang: sql, thrd: (24692, 37768), cmpt: ``, lut: 1708093789.6445248
+[0m15:29:50.254640 [debug] [Thread-1 (]: SQL status: OK in 0.9200000166893005 seconds
+[0m15:29:50.305210 [debug] [Thread-1 (]: Writing runtime sql for node "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:29:50.315438 [debug] [Thread-1 (]: Databricks adapter: conn: 1877853344432: get_thread_connection: sess: 01eeccd7-d885-1ea8-9670-aeae79f7b0f9, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.6709132194519043s, acqrelcnt: 1, lang: sql, thrd: (24692, 37768), cmpt: ``, lut: 1708093789.6445248
+[0m15:29:50.315438 [debug] [Thread-1 (]: Databricks adapter: conn: 1877853344432: idle check connection: sess: 01eeccd7-d885-1ea8-9670-aeae79f7b0f9, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.6709132194519043s, acqrelcnt: 1, lang: sql, thrd: (24692, 37768), cmpt: ``, lut: 1708093789.6445248
+[0m15:29:50.315438 [debug] [Thread-1 (]: Using databricks connection "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:29:50.315438 [debug] [Thread-1 (]: On model.TEST.MOVIMENTI_OUTPUT: /* {"app": "dbt", "dbt_version": "1.7.8", "dbt_databricks_version": "1.7.7", "databricks_sql_connector_version": "2.9.3", "profile_name": "TEST", "target_name": "dev", "node_id": "model.TEST.MOVIMENTI_OUTPUT"} */
+
+  
+    
+        create or replace table `dbt-test`.`dbt-test-managed-tables`.`MOVIMENTI_OUTPUT`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with MOVIMENTI_OUTPUT as (
+
+    select *
+    from `ext-tables`.movimenti
+
+)
+
+select *
+from MOVIMENTI_OUTPUT
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  
+[0m15:31:06.508031 [debug] [Thread-1 (]: SQL status: OK in 76.19000244140625 seconds
+[0m15:31:06.676482 [debug] [Thread-1 (]: Timing info for model.TEST.MOVIMENTI_OUTPUT (execute): 15:29:49.314343 => 15:31:06.676482
+[0m15:31:06.676482 [debug] [Thread-1 (]: Databricks adapter: conn: 1877853344432: _release sess: 01eeccd7-d885-1ea8-9670-aeae79f7b0f9, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 0, lang: sql, thrd: (24692, 37768), cmpt: ``, lut: 1708093866.6764822
+[0m15:31:06.676482 [debug] [Thread-1 (]: Databricks adapter: conn: 1877853344432: _release sess: 01eeccd7-d885-1ea8-9670-aeae79f7b0f9, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 0, lang: sql, thrd: (24692, 37768), cmpt: ``, lut: 1708093866.6764822
+[0m15:31:06.676482 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1c1b5b4c-3252-41bd-97a5-8749fbf8da4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B538E13380>]}
+[0m15:31:06.676482 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt-test-managed-tables.MOVIMENTI_OUTPUT ..... [[32mOK[0m in 77.46s]
+[0m15:31:06.676482 [debug] [Thread-1 (]: Finished running node model.TEST.MOVIMENTI_OUTPUT
+[0m15:31:06.676482 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: idle check connection: sess: None, name: master, idle: 77.48842811584473s, acqrelcnt: 0, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093789.188054
+[0m15:31:06.676482 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: reusing connection master sess: None, name: master, idle: 77.48842811584473s, acqrelcnt: 0, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093789.188054
+[0m15:31:06.676482 [debug] [MainThread]: Databricks adapter: Thread (24692, 21720) using default compute resource.
+[0m15:31:06.676482 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: _acquire sess: None, name: master, idle: 77.48842811584473s, acqrelcnt: 1, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093789.188054
+[0m15:31:06.676482 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: get_thread_connection: sess: None, name: master, idle: 77.48842811584473s, acqrelcnt: 1, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093789.188054
+[0m15:31:06.676482 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: idle check connection: sess: None, name: master, idle: 77.48842811584473s, acqrelcnt: 1, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093789.188054
+[0m15:31:06.676482 [debug] [MainThread]: On master: ROLLBACK
+[0m15:31:06.676482 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:31:06.987709 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: session opened sess: 01eeccd8-069f-18cb-b944-6be6a458f894, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093866.9877095
+[0m15:31:06.987709 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m15:31:06.987709 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: get_thread_connection: sess: 01eeccd8-069f-18cb-b944-6be6a458f894, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093866.9877095
+[0m15:31:06.987709 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: idle check connection: sess: 01eeccd8-069f-18cb-b944-6be6a458f894, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093866.9877095
+[0m15:31:06.987709 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m15:31:06.987709 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m15:31:06.987709 [debug] [MainThread]: Databricks adapter: conn: 1877853536032: _release sess: 01eeccd8-069f-18cb-b944-6be6a458f894, name: master, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (24692, 21720), cmpt: ``, lut: 1708093866.9877095
+[0m15:31:06.995734 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:31:06.995734 [debug] [MainThread]: On master: ROLLBACK
+[0m15:31:06.995734 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m15:31:06.997744 [debug] [MainThread]: On master: Close
+[0m15:31:07.258587 [debug] [MainThread]: Connection 'list_dbt-test' was properly closed.
+[0m15:31:07.260614 [debug] [MainThread]: On list_dbt-test: Close
+[0m15:31:07.340015 [debug] [MainThread]: Connection 'list_dbt-test_dbt-test-managed-tables' was properly closed.
+[0m15:31:07.341012 [debug] [MainThread]: On list_dbt-test_dbt-test-managed-tables: Close
+[0m15:31:07.402710 [debug] [MainThread]: Connection 'model.TEST.MOVIMENTI_OUTPUT' was properly closed.
+[0m15:31:07.410742 [debug] [MainThread]: On model.TEST.MOVIMENTI_OUTPUT: ROLLBACK
+[0m15:31:07.410742 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m15:31:07.410742 [debug] [MainThread]: On model.TEST.MOVIMENTI_OUTPUT: Close
+[0m15:31:07.485576 [info ] [MainThread]: 
+[0m15:31:07.485576 [info ] [MainThread]: Finished running 1 table model in 0 hours 1 minutes and 20.08 seconds (80.08s).
+[0m15:31:07.485576 [debug] [MainThread]: Command end result
+[0m15:31:07.546064 [info ] [MainThread]: 
+[0m15:31:07.546064 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:31:07.550506 [info ] [MainThread]: 
+[0m15:31:07.551504 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m15:31:07.553497 [debug] [MainThread]: Command `dbt run` succeeded at 15:31:07.553497 after 82.31 seconds
+[0m15:31:07.554495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5169CDFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B53884F4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B516E1CFE0>]}
+[0m15:31:07.554495 [debug] [MainThread]: Flushing usage events
+[0m15:31:08.037954 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m15:42:15.881310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C6A7060C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C6A704BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C6A7078C0>]}
+
+
+============================== 15:42:15.897338 | ed092e8f-50b7-4add-b5ea-92b8c18e600c ==============================
+[0m15:42:15.897338 [info ] [MainThread]: Running with dbt=1.7.8
+[0m15:42:15.897338 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\locatellia\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\locatellia\\Desktop\\PROMETEIA\\_____DBT\\Workspaces\\dbt_venv\\TEST\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:42:19.730364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ed092e8f-50b7-4add-b5ea-92b8c18e600c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C81E4F140>]}
+[0m15:42:19.793516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ed092e8f-50b7-4add-b5ea-92b8c18e600c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C68CB2690>]}
+[0m15:42:19.793516 [info ] [MainThread]: Registered adapter: databricks=1.7.7
+[0m15:42:19.799165 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing enabled: 9 files deleted, 24 files added, 2 files changed.
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\catalog.sql
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\tblproperties.sql
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\drop.sql
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\optimize.sql
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\refresh.sql
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\drop.sql
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\copy_into.sql
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\drop.sql
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\get_custom_name\get_custom_database.sql
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\relation.sql
+[0m15:42:20.326192 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\create.sql
+[0m15:42:20.334216 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\persist_docs.sql
+[0m15:42:20.334216 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\create.sql
+[0m15:42:20.334216 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\databricks_catalog.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\etc\statement.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\metadata.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\python.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\drop.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\create.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\refresh.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\create.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\file_format.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\drop.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\constraints.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\adapters.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\python.sql
+[0m15:42:20.336247 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\create_materialized_view_as.sql
+[0m15:42:20.344280 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\catalog.sql
+[0m15:42:20.344280 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\statement.sql
+[0m15:42:20.344280 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\refresh_materialized_view.sql
+[0m15:42:20.344280 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\copy_into.sql
+[0m15:42:20.346291 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\metadata.sql
+[0m15:42:20.346291 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\streaming_table\create_or_refresh_streaming_table_as.sql
+[0m15:42:20.346291 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\view.sql
+[0m15:42:20.346291 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\incremental\incremental.sql
+[0m15:42:20.983825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ed092e8f-50b7-4add-b5ea-92b8c18e600c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C82305850>]}
+[0m15:42:21.024672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ed092e8f-50b7-4add-b5ea-92b8c18e600c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C822BF320>]}
+[0m15:42:21.024672 [info ] [MainThread]: Found 1 model, 2 tests, 0 sources, 0 exposures, 0 metrics, 535 macros, 0 groups, 0 semantic models
+[0m15:42:21.032322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed092e8f-50b7-4add-b5ea-92b8c18e600c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C81EE0B90>]}
+[0m15:42:21.034344 [info ] [MainThread]: 
+[0m15:42:21.034344 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: Creating DatabricksDBTConnection sess: None, name: master, idle: 0s, acqrelcnt: 0, lang: None, thrd: (2972, 3792), cmpt: ``, lut: None
+[0m15:42:21.034344 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m15:42:21.034344 [debug] [MainThread]: Databricks adapter: Thread (2972, 3792) using default compute resource.
+[0m15:42:21.034344 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: _acquire sess: None, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094541.0343444
+[0m15:42:21.034344 [debug] [ThreadPool]: Databricks adapter: conn: 2527624686976: Creating DatabricksDBTConnection sess: None, name: list_dbt-test, idle: 0s, acqrelcnt: 0, lang: None, thrd: (2972, 24796), cmpt: ``, lut: None
+[0m15:42:21.034344 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt-test'
+[0m15:42:21.034344 [debug] [ThreadPool]: Databricks adapter: Thread (2972, 24796) using default compute resource.
+[0m15:42:21.034344 [debug] [ThreadPool]: Databricks adapter: conn: 2527624686976: _acquire sess: None, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (2972, 24796), cmpt: ``, lut: 1708094541.0343444
+[0m15:42:21.034344 [debug] [ThreadPool]: Databricks adapter: conn: 2527624686976: get_thread_connection: sess: None, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (2972, 24796), cmpt: ``, lut: 1708094541.0343444
+[0m15:42:21.034344 [debug] [ThreadPool]: Databricks adapter: conn: 2527624686976: idle check connection: sess: None, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (2972, 24796), cmpt: ``, lut: 1708094541.0343444
+[0m15:42:21.034344 [debug] [ThreadPool]: Using databricks connection "list_dbt-test"
+[0m15:42:21.042420 [debug] [ThreadPool]: On list_dbt-test: GetSchemas(database=dbt-test, schema=None)
+[0m15:42:21.042420 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:42:21.529800 [debug] [ThreadPool]: Databricks adapter: conn: 2527624686976: session opened sess: 01eeccd9-98ad-129a-aa5e-5cfa87813f47, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (2972, 24796), cmpt: ``, lut: 1708094541.5298
+[0m15:42:22.009392 [debug] [ThreadPool]: SQL status: OK in 0.9700000286102295 seconds
+[0m15:42:22.009392 [debug] [ThreadPool]: Databricks adapter: conn: 2527624686976: _release sess: 01eeccd9-98ad-129a-aa5e-5cfa87813f47, name: list_dbt-test, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (2972, 24796), cmpt: ``, lut: 1708094542.0093927
+[0m15:42:22.009392 [debug] [ThreadPool]: Databricks adapter: conn: 2527624691584: Creating DatabricksDBTConnection sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0s, acqrelcnt: 0, lang: None, thrd: (2972, 30232), cmpt: ``, lut: None
+[0m15:42:22.009392 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt-test_dbt-test-managed-tables'
+[0m15:42:22.009392 [debug] [ThreadPool]: Databricks adapter: Thread (2972, 30232) using default compute resource.
+[0m15:42:22.009392 [debug] [ThreadPool]: Databricks adapter: conn: 2527624691584: _acquire sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (2972, 30232), cmpt: ``, lut: 1708094542.0093927
+[0m15:42:22.021556 [debug] [ThreadPool]: Databricks adapter: conn: 2527624691584: get_thread_connection: sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.012163639068603516s, acqrelcnt: 1, lang: None, thrd: (2972, 30232), cmpt: ``, lut: 1708094542.0093927
+[0m15:42:22.022554 [debug] [ThreadPool]: Databricks adapter: conn: 2527624691584: idle check connection: sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.012163639068603516s, acqrelcnt: 1, lang: None, thrd: (2972, 30232), cmpt: ``, lut: 1708094542.0093927
+[0m15:42:22.022629 [debug] [ThreadPool]: Using databricks connection "list_dbt-test_dbt-test-managed-tables"
+[0m15:42:22.022629 [debug] [ThreadPool]: On list_dbt-test_dbt-test-managed-tables: GetTables(database=dbt-test, schema=dbt-test-managed-tables, identifier=None)
+[0m15:42:22.022629 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:42:22.383777 [debug] [ThreadPool]: Databricks adapter: conn: 2527624691584: session opened sess: 01eeccd9-992e-12b3-bfaf-1fdce40ec9b0, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (2972, 30232), cmpt: ``, lut: 1708094542.3837779
+[0m15:42:22.875860 [debug] [ThreadPool]: SQL status: OK in 0.8500000238418579 seconds
+[0m15:42:22.875860 [debug] [ThreadPool]: Databricks adapter: conn: 2527624691584: _release sess: 01eeccd9-992e-12b3-bfaf-1fdce40ec9b0, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (2972, 30232), cmpt: ``, lut: 1708094542.8758607
+[0m15:42:22.891479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed092e8f-50b7-4add-b5ea-92b8c18e600c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C81E4F440>]}
+[0m15:42:22.891479 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: get_thread_connection: sess: None, name: master, idle: 1.8571350574493408s, acqrelcnt: 1, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094541.0343444
+[0m15:42:22.891479 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: idle check connection: sess: None, name: master, idle: 1.8571350574493408s, acqrelcnt: 1, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094541.0343444
+[0m15:42:22.891479 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: get_thread_connection: sess: None, name: master, idle: 1.8571350574493408s, acqrelcnt: 1, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094541.0343444
+[0m15:42:22.891479 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: idle check connection: sess: None, name: master, idle: 1.8571350574493408s, acqrelcnt: 1, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094541.0343444
+[0m15:42:22.891479 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m15:42:22.891479 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m15:42:22.891479 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: _release sess: None, name: master, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094542.8914795
+[0m15:42:22.891479 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:42:22.891479 [info ] [MainThread]: 
+[0m15:42:22.909116 [debug] [Thread-1 (]: Began running node model.TEST.MOVIMENTI_OUTPUT
+[0m15:42:22.909116 [info ] [Thread-1 (]: 1 of 1 START sql incremental model dbt-test-managed-tables.MOVIMENTI_OUTPUT .... [RUN]
+[0m15:42:22.911114 [debug] [Thread-1 (]: Databricks adapter: conn: 2527625790048: Creating DatabricksDBTConnection sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0s, acqrelcnt: 0, lang: None, thrd: (2972, 8252), cmpt: ``, lut: None
+[0m15:42:22.911863 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.TEST.MOVIMENTI_OUTPUT'
+[0m15:42:22.911863 [debug] [Thread-1 (]: Databricks adapter: On thread (2972, 8252): `dbt-test`.`dbt-test-managed-tables`.`MOVIMENTI_OUTPUT` using default compute resource.
+[0m15:42:22.912861 [debug] [Thread-1 (]: Databricks adapter: conn: 2527625790048: _acquire sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 1, lang: sql, thrd: (2972, 8252), cmpt: ``, lut: 1708094542.9128609
+[0m15:42:22.912861 [debug] [Thread-1 (]: Began compiling node model.TEST.MOVIMENTI_OUTPUT
+[0m15:42:22.916592 [debug] [Thread-1 (]: Writing injected SQL for node "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:42:22.916592 [debug] [Thread-1 (]: Timing info for model.TEST.MOVIMENTI_OUTPUT (compile): 15:42:22.913861 => 15:42:22.916592
+[0m15:42:22.916592 [debug] [Thread-1 (]: Began executing node model.TEST.MOVIMENTI_OUTPUT
+[0m15:42:23.013208 [debug] [Thread-1 (]: Writing runtime sql for node "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:42:23.013711 [debug] [Thread-1 (]: Databricks adapter: conn: 2527625790048: get_thread_connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.10085058212280273s, acqrelcnt: 1, lang: sql, thrd: (2972, 8252), cmpt: ``, lut: 1708094542.9128609
+[0m15:42:23.013711 [debug] [Thread-1 (]: Databricks adapter: conn: 2527625790048: idle check connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.10085058212280273s, acqrelcnt: 1, lang: sql, thrd: (2972, 8252), cmpt: ``, lut: 1708094542.9128609
+[0m15:42:23.013711 [debug] [Thread-1 (]: Databricks adapter: conn: 2527625790048: get_thread_connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.10085058212280273s, acqrelcnt: 1, lang: sql, thrd: (2972, 8252), cmpt: ``, lut: 1708094542.9128609
+[0m15:42:23.013711 [debug] [Thread-1 (]: Databricks adapter: conn: 2527625790048: idle check connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.10085058212280273s, acqrelcnt: 1, lang: sql, thrd: (2972, 8252), cmpt: ``, lut: 1708094542.9128609
+[0m15:42:23.013711 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m15:42:23.013711 [debug] [Thread-1 (]: Using databricks connection "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:42:23.013711 [debug] [Thread-1 (]: On model.TEST.MOVIMENTI_OUTPUT: /* {"app": "dbt", "dbt_version": "1.7.8", "dbt_databricks_version": "1.7.7", "databricks_sql_connector_version": "2.9.3", "profile_name": "TEST", "target_name": "dev", "node_id": "model.TEST.MOVIMENTI_OUTPUT"} */
+
+  
+    
+        create or replace table `dbt-test`.`dbt-test-managed-tables`.`MOVIMENTI_OUTPUT`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with MOVIMENTI_OUTPUT as (
+
+    select *
+    from `ext-tables`.movimenti
+
+)
+
+select *
+from MOVIMENTI_OUTPUT
+limit 5
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  
+[0m15:42:23.013711 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:42:23.388590 [debug] [Thread-1 (]: Databricks adapter: conn: 2527625790048: session opened sess: 01eeccd9-99c8-13d2-ae1b-27926f4bfae3, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 1, lang: sql, thrd: (2972, 8252), cmpt: ``, lut: 1708094543.38859
+[0m15:42:30.639641 [debug] [Thread-1 (]: SQL status: OK in 7.630000114440918 seconds
+[0m15:42:30.811441 [debug] [Thread-1 (]: Timing info for model.TEST.MOVIMENTI_OUTPUT (execute): 15:42:22.928458 => 15:42:30.811441
+[0m15:42:30.811441 [debug] [Thread-1 (]: Databricks adapter: conn: 2527625790048: _release sess: 01eeccd9-99c8-13d2-ae1b-27926f4bfae3, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 0, lang: sql, thrd: (2972, 8252), cmpt: ``, lut: 1708094550.8114417
+[0m15:42:30.811441 [debug] [Thread-1 (]: Databricks adapter: conn: 2527625790048: _release sess: 01eeccd9-99c8-13d2-ae1b-27926f4bfae3, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 0, lang: sql, thrd: (2972, 8252), cmpt: ``, lut: 1708094550.8114417
+[0m15:42:30.811441 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed092e8f-50b7-4add-b5ea-92b8c18e600c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C8222C140>]}
+[0m15:42:30.811441 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model dbt-test-managed-tables.MOVIMENTI_OUTPUT  [[32mOK[0m in 7.90s]
+[0m15:42:30.811441 [debug] [Thread-1 (]: Finished running node model.TEST.MOVIMENTI_OUTPUT
+[0m15:42:30.819887 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: idle check connection: sess: None, name: master, idle: 7.928407669067383s, acqrelcnt: 0, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094542.8914795
+[0m15:42:30.819887 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: reusing connection master sess: None, name: master, idle: 7.928407669067383s, acqrelcnt: 0, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094542.8914795
+[0m15:42:30.819887 [debug] [MainThread]: Databricks adapter: Thread (2972, 3792) using default compute resource.
+[0m15:42:30.822071 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: _acquire sess: None, name: master, idle: 7.928407669067383s, acqrelcnt: 1, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094542.8914795
+[0m15:42:30.822174 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: get_thread_connection: sess: None, name: master, idle: 7.930694818496704s, acqrelcnt: 1, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094542.8914795
+[0m15:42:30.822174 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: idle check connection: sess: None, name: master, idle: 7.930694818496704s, acqrelcnt: 1, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094542.8914795
+[0m15:42:30.822174 [debug] [MainThread]: On master: ROLLBACK
+[0m15:42:30.822174 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:42:31.149132 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: session opened sess: 01eeccd9-9e6a-11af-87c2-3472dab06d53, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094551.1491327
+[0m15:42:31.165057 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m15:42:31.165057 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: get_thread_connection: sess: 01eeccd9-9e6a-11af-87c2-3472dab06d53, name: master, idle: 0.015924453735351562s, acqrelcnt: 1, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094551.1491327
+[0m15:42:31.165057 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: idle check connection: sess: 01eeccd9-9e6a-11af-87c2-3472dab06d53, name: master, idle: 0.015924453735351562s, acqrelcnt: 1, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094551.1491327
+[0m15:42:31.165057 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m15:42:31.165057 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m15:42:31.165057 [debug] [MainThread]: Databricks adapter: conn: 2527624689616: _release sess: 01eeccd9-9e6a-11af-87c2-3472dab06d53, name: master, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (2972, 3792), cmpt: ``, lut: 1708094551.1650572
+[0m15:42:31.165057 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:42:31.165057 [debug] [MainThread]: On master: ROLLBACK
+[0m15:42:31.165057 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m15:42:31.165057 [debug] [MainThread]: On master: Close
+[0m15:42:31.314615 [debug] [MainThread]: Connection 'list_dbt-test' was properly closed.
+[0m15:42:31.314615 [debug] [MainThread]: On list_dbt-test: Close
+[0m15:42:31.445418 [debug] [MainThread]: Connection 'list_dbt-test_dbt-test-managed-tables' was properly closed.
+[0m15:42:31.445418 [debug] [MainThread]: On list_dbt-test_dbt-test-managed-tables: Close
+[0m15:42:31.596332 [debug] [MainThread]: Connection 'model.TEST.MOVIMENTI_OUTPUT' was properly closed.
+[0m15:42:31.596332 [debug] [MainThread]: On model.TEST.MOVIMENTI_OUTPUT: ROLLBACK
+[0m15:42:31.596332 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m15:42:31.596332 [debug] [MainThread]: On model.TEST.MOVIMENTI_OUTPUT: Close
+[0m15:42:31.706863 [info ] [MainThread]: 
+[0m15:42:31.706863 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 10.67 seconds (10.67s).
+[0m15:42:31.711991 [debug] [MainThread]: Command end result
+[0m15:42:31.757627 [info ] [MainThread]: 
+[0m15:42:31.757627 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:42:31.757627 [info ] [MainThread]: 
+[0m15:42:31.757627 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m15:42:31.763704 [debug] [MainThread]: Command `dbt run` succeeded at 15:42:31.762707 after 15.95 seconds
+[0m15:42:31.763704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C69D6D730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C6A5C9BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C81FE6690>]}
+[0m15:42:31.764700 [debug] [MainThread]: Flushing usage events
+[0m15:42:32.264319 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m15:43:17.054739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002794AE00C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002794AE00B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002794AE02600>]}
+
+
+============================== 15:43:17.061718 | 1e4944d8-5d3f-4f6a-83af-511e2beb6381 ==============================
+[0m15:43:17.061718 [info ] [MainThread]: Running with dbt=1.7.8
+[0m15:43:17.063243 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\locatellia\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\locatellia\\Desktop\\PROMETEIA\\_____DBT\\Workspaces\\dbt_venv\\TEST\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:43:18.825729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1e4944d8-5d3f-4f6a-83af-511e2beb6381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002794AE3B830>]}
+[0m15:43:18.896380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1e4944d8-5d3f-4f6a-83af-511e2beb6381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002796C3EE180>]}
+[0m15:43:18.904389 [info ] [MainThread]: Registered adapter: databricks=1.7.7
+[0m15:43:18.916988 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing enabled: 9 files deleted, 24 files added, 2 files changed.
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\relation.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\databricks_catalog.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\file_format.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\metadata.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\create.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\catalog.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\get_custom_name\get_custom_database.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\refresh.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\drop.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\constraints.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\create.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\streaming_table\drop.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\python.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\optimize.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\create.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\view\drop.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\table\create.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\copy_into.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\adapters\persist_docs.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\tblproperties.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\etc\statement.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\drop.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\refresh.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: added file: dbt_databricks://macros\relations\materialized_view\drop.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\create_materialized_view_as.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\python.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\catalog.sql
+[0m15:43:19.078604 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\metadata.sql
+[0m15:43:19.094237 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\adapters.sql
+[0m15:43:19.095142 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\copy_into.sql
+[0m15:43:19.095373 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\statement.sql
+[0m15:43:19.095373 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\streaming_table\create_or_refresh_streaming_table_as.sql
+[0m15:43:19.095373 [debug] [MainThread]: Partial parsing: deleted file: dbt_databricks://macros\materializations\materialized_view\refresh_materialized_view.sql
+[0m15:43:19.095373 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\view.sql
+[0m15:43:19.095373 [debug] [MainThread]: Partial parsing: updated file: dbt_databricks://macros\materializations\incremental\incremental.sql
+[0m15:43:19.702501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1e4944d8-5d3f-4f6a-83af-511e2beb6381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002796C2E40B0>]}
+[0m15:43:19.745330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1e4944d8-5d3f-4f6a-83af-511e2beb6381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002796C6BE630>]}
+[0m15:43:19.745330 [info ] [MainThread]: Found 1 model, 2 tests, 0 sources, 0 exposures, 0 metrics, 535 macros, 0 groups, 0 semantic models
+[0m15:43:19.745330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e4944d8-5d3f-4f6a-83af-511e2beb6381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002796C2430B0>]}
+[0m15:43:19.745330 [info ] [MainThread]: 
+[0m15:43:19.750868 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: Creating DatabricksDBTConnection sess: None, name: master, idle: 0s, acqrelcnt: 0, lang: None, thrd: (41524, 41392), cmpt: ``, lut: None
+[0m15:43:19.750868 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m15:43:19.750868 [debug] [MainThread]: Databricks adapter: Thread (41524, 41392) using default compute resource.
+[0m15:43:19.752898 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: _acquire sess: None, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094599.7528985
+[0m15:43:19.752898 [debug] [ThreadPool]: Databricks adapter: conn: 2720533313872: Creating DatabricksDBTConnection sess: None, name: list_dbt-test, idle: 0s, acqrelcnt: 0, lang: None, thrd: (41524, 35116), cmpt: ``, lut: None
+[0m15:43:19.752898 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt-test'
+[0m15:43:19.752898 [debug] [ThreadPool]: Databricks adapter: Thread (41524, 35116) using default compute resource.
+[0m15:43:19.752898 [debug] [ThreadPool]: Databricks adapter: conn: 2720533313872: _acquire sess: None, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 35116), cmpt: ``, lut: 1708094599.7528985
+[0m15:43:19.752898 [debug] [ThreadPool]: Databricks adapter: conn: 2720533313872: get_thread_connection: sess: None, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 35116), cmpt: ``, lut: 1708094599.7528985
+[0m15:43:19.752898 [debug] [ThreadPool]: Databricks adapter: conn: 2720533313872: idle check connection: sess: None, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 35116), cmpt: ``, lut: 1708094599.7528985
+[0m15:43:19.752898 [debug] [ThreadPool]: Using databricks connection "list_dbt-test"
+[0m15:43:19.752898 [debug] [ThreadPool]: On list_dbt-test: GetSchemas(database=dbt-test, schema=None)
+[0m15:43:19.752898 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:43:20.229762 [debug] [ThreadPool]: Databricks adapter: conn: 2720533313872: session opened sess: 01eeccd9-bbac-10e2-8909-7cfa58a76a55, name: list_dbt-test, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 35116), cmpt: ``, lut: 1708094600.229762
+[0m15:43:20.611988 [debug] [ThreadPool]: SQL status: OK in 0.8600000143051147 seconds
+[0m15:43:20.628188 [debug] [ThreadPool]: Databricks adapter: conn: 2720533313872: _release sess: 01eeccd9-bbac-10e2-8909-7cfa58a76a55, name: list_dbt-test, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (41524, 35116), cmpt: ``, lut: 1708094600.6281884
+[0m15:43:20.628188 [debug] [ThreadPool]: Databricks adapter: conn: 2720533302064: Creating DatabricksDBTConnection sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0s, acqrelcnt: 0, lang: None, thrd: (41524, 36320), cmpt: ``, lut: None
+[0m15:43:20.628188 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt-test_dbt-test-managed-tables'
+[0m15:43:20.628188 [debug] [ThreadPool]: Databricks adapter: Thread (41524, 36320) using default compute resource.
+[0m15:43:20.628188 [debug] [ThreadPool]: Databricks adapter: conn: 2720533302064: _acquire sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 36320), cmpt: ``, lut: 1708094600.6281884
+[0m15:43:20.628188 [debug] [ThreadPool]: Databricks adapter: conn: 2720533302064: get_thread_connection: sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 36320), cmpt: ``, lut: 1708094600.6281884
+[0m15:43:20.628188 [debug] [ThreadPool]: Databricks adapter: conn: 2720533302064: idle check connection: sess: None, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 36320), cmpt: ``, lut: 1708094600.6281884
+[0m15:43:20.628188 [debug] [ThreadPool]: Using databricks connection "list_dbt-test_dbt-test-managed-tables"
+[0m15:43:20.628188 [debug] [ThreadPool]: On list_dbt-test_dbt-test-managed-tables: GetTables(database=dbt-test, schema=dbt-test-managed-tables, identifier=None)
+[0m15:43:20.628188 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:43:21.100914 [debug] [ThreadPool]: Databricks adapter: conn: 2720533302064: session opened sess: 01eeccd9-bc31-185c-81a3-39d0c1a598fe, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 36320), cmpt: ``, lut: 1708094601.1009147
+[0m15:43:21.451932 [debug] [ThreadPool]: SQL status: OK in 0.8199999928474426 seconds
+[0m15:43:21.453950 [debug] [ThreadPool]: Databricks adapter: conn: 2720533302064: _release sess: 01eeccd9-bc31-185c-81a3-39d0c1a598fe, name: list_dbt-test_dbt-test-managed-tables, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (41524, 36320), cmpt: ``, lut: 1708094601.4539502
+[0m15:43:21.453950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e4944d8-5d3f-4f6a-83af-511e2beb6381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002794A02A840>]}
+[0m15:43:21.453950 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: get_thread_connection: sess: None, name: master, idle: 1.7010517120361328s, acqrelcnt: 1, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094599.7528985
+[0m15:43:21.453950 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: idle check connection: sess: None, name: master, idle: 1.7010517120361328s, acqrelcnt: 1, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094599.7528985
+[0m15:43:21.453950 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: get_thread_connection: sess: None, name: master, idle: 1.7010517120361328s, acqrelcnt: 1, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094599.7528985
+[0m15:43:21.453950 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: idle check connection: sess: None, name: master, idle: 1.7010517120361328s, acqrelcnt: 1, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094599.7528985
+[0m15:43:21.461608 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m15:43:21.462065 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m15:43:21.462283 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: _release sess: None, name: master, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094601.4622836
+[0m15:43:21.462283 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:43:21.463797 [info ] [MainThread]: 
+[0m15:43:21.463797 [debug] [Thread-1 (]: Began running node model.TEST.MOVIMENTI_OUTPUT
+[0m15:43:21.463797 [info ] [Thread-1 (]: 1 of 1 START sql incremental model dbt-test-managed-tables.MOVIMENTI_OUTPUT .... [RUN]
+[0m15:43:21.471811 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: Creating DatabricksDBTConnection sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0s, acqrelcnt: 0, lang: None, thrd: (41524, 42104), cmpt: ``, lut: None
+[0m15:43:21.471811 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.TEST.MOVIMENTI_OUTPUT'
+[0m15:43:21.471811 [debug] [Thread-1 (]: Databricks adapter: On thread (41524, 42104): `dbt-test`.`dbt-test-managed-tables`.`MOVIMENTI_OUTPUT` using default compute resource.
+[0m15:43:21.473823 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: _acquire sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.4738233
+[0m15:43:21.473823 [debug] [Thread-1 (]: Began compiling node model.TEST.MOVIMENTI_OUTPUT
+[0m15:43:21.480850 [debug] [Thread-1 (]: Writing injected SQL for node "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:43:21.483689 [debug] [Thread-1 (]: Timing info for model.TEST.MOVIMENTI_OUTPUT (compile): 15:43:21.473823 => 15:43:21.483689
+[0m15:43:21.483689 [debug] [Thread-1 (]: Began executing node model.TEST.MOVIMENTI_OUTPUT
+[0m15:43:21.524348 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: get_thread_connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.05052495002746582s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.4738233
+[0m15:43:21.528135 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: idle check connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.054312705993652344s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.4738233
+[0m15:43:21.529136 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: get_thread_connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0553135871887207s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.4738233
+[0m15:43:21.529136 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: idle check connection: sess: None, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0553135871887207s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.4738233
+[0m15:43:21.530383 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m15:43:21.530383 [debug] [Thread-1 (]: Using databricks connection "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:43:21.530383 [debug] [Thread-1 (]: On model.TEST.MOVIMENTI_OUTPUT: /* {"app": "dbt", "dbt_version": "1.7.8", "dbt_databricks_version": "1.7.7", "databricks_sql_connector_version": "2.9.3", "profile_name": "TEST", "target_name": "dev", "node_id": "model.TEST.MOVIMENTI_OUTPUT"} */
+
+      describe extended `dbt-test`.`dbt-test-managed-tables`.`movimenti_output`
+  
+[0m15:43:21.530383 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:43:21.845767 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: session opened sess: 01eeccd9-bc9b-1de7-b16e-309e14ca013f, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.8457675
+[0m15:43:22.407889 [debug] [Thread-1 (]: SQL status: OK in 0.8799999952316284 seconds
+[0m15:43:22.430203 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: get_thread_connection: sess: 01eeccd9-bc9b-1de7-b16e-309e14ca013f, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.5844109058380127s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.8457675
+[0m15:43:22.430203 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: idle check connection: sess: 01eeccd9-bc9b-1de7-b16e-309e14ca013f, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.5844364166259766s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.8457675
+[0m15:43:22.430203 [debug] [Thread-1 (]: Using databricks connection "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:43:22.430203 [debug] [Thread-1 (]: On model.TEST.MOVIMENTI_OUTPUT: /* {"app": "dbt", "dbt_version": "1.7.8", "dbt_databricks_version": "1.7.7", "databricks_sql_connector_version": "2.9.3", "profile_name": "TEST", "target_name": "dev", "node_id": "model.TEST.MOVIMENTI_OUTPUT"} */
+
+  
+    create or replace temporary view `MOVIMENTI_OUTPUT__dbt_tmp` as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with MOVIMENTI_OUTPUT as (
+
+    select *
+    from `ext-tables`.movimenti
+
+)
+
+select *
+from MOVIMENTI_OUTPUT
+limit 10
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  
+[0m15:43:22.928255 [debug] [Thread-1 (]: SQL status: OK in 0.5 seconds
+[0m15:43:22.945395 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: get_thread_connection: sess: 01eeccd9-bc9b-1de7-b16e-309e14ca013f, name: model.TEST.MOVIMENTI_OUTPUT, idle: 1.0996277332305908s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.8457675
+[0m15:43:22.945395 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: idle check connection: sess: 01eeccd9-bc9b-1de7-b16e-309e14ca013f, name: model.TEST.MOVIMENTI_OUTPUT, idle: 1.0996277332305908s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.8457675
+[0m15:43:22.945395 [debug] [Thread-1 (]: Using databricks connection "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:43:22.945395 [debug] [Thread-1 (]: On model.TEST.MOVIMENTI_OUTPUT: /* {"app": "dbt", "dbt_version": "1.7.8", "dbt_databricks_version": "1.7.7", "databricks_sql_connector_version": "2.9.3", "profile_name": "TEST", "target_name": "dev", "node_id": "model.TEST.MOVIMENTI_OUTPUT"} */
+
+      describe extended `dbt-test`.`dbt-test-managed-tables`.`MOVIMENTI_OUTPUT`
+  
+[0m15:43:23.335829 [debug] [Thread-1 (]: SQL status: OK in 0.3799999952316284 seconds
+[0m15:43:23.343391 [debug] [Thread-1 (]: Writing runtime sql for node "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:43:23.350683 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: get_thread_connection: sess: 01eeccd9-bc9b-1de7-b16e-309e14ca013f, name: model.TEST.MOVIMENTI_OUTPUT, idle: 1.5039215087890625s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.8457675
+[0m15:43:23.350683 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: idle check connection: sess: 01eeccd9-bc9b-1de7-b16e-309e14ca013f, name: model.TEST.MOVIMENTI_OUTPUT, idle: 1.5049164295196533s, acqrelcnt: 1, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094601.8457675
+[0m15:43:23.351683 [debug] [Thread-1 (]: Using databricks connection "model.TEST.MOVIMENTI_OUTPUT"
+[0m15:43:23.351683 [debug] [Thread-1 (]: On model.TEST.MOVIMENTI_OUTPUT: /* {"app": "dbt", "dbt_version": "1.7.8", "dbt_databricks_version": "1.7.7", "databricks_sql_connector_version": "2.9.3", "profile_name": "TEST", "target_name": "dev", "node_id": "model.TEST.MOVIMENTI_OUTPUT"} */
+-- back compat for old kwarg name
+  
+  
+  
+      
+  
+
+  
+
+  merge into `dbt-test`.`dbt-test-managed-tables`.`MOVIMENTI_OUTPUT` as DBT_INTERNAL_DEST
+      using `MOVIMENTI_OUTPUT__dbt_tmp` as DBT_INTERNAL_SOURCE
+      on FALSE
+
+      when matched then update set
+         * 
+
+      when not matched then insert *
+
+[0m15:43:27.712173 [debug] [Thread-1 (]: SQL status: OK in 4.360000133514404 seconds
+[0m15:43:27.731272 [debug] [Thread-1 (]: Timing info for model.TEST.MOVIMENTI_OUTPUT (execute): 15:43:21.483689 => 15:43:27.731272
+[0m15:43:27.732269 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: _release sess: 01eeccd9-bc9b-1de7-b16e-309e14ca013f, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 0, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094607.7312722
+[0m15:43:27.732269 [debug] [Thread-1 (]: Databricks adapter: conn: 2720528610608: _release sess: 01eeccd9-bc9b-1de7-b16e-309e14ca013f, name: model.TEST.MOVIMENTI_OUTPUT, idle: 0.0s, acqrelcnt: 0, lang: sql, thrd: (41524, 42104), cmpt: ``, lut: 1708094607.732269
+[0m15:43:27.733265 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e4944d8-5d3f-4f6a-83af-511e2beb6381', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002796C3EEC60>]}
+[0m15:43:27.734262 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model dbt-test-managed-tables.MOVIMENTI_OUTPUT  [[32mOK[0m in 6.27s]
+[0m15:43:27.736407 [debug] [Thread-1 (]: Finished running node model.TEST.MOVIMENTI_OUTPUT
+[0m15:43:27.738401 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: idle check connection: sess: None, name: master, idle: 6.276118040084839s, acqrelcnt: 0, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094601.4622836
+[0m15:43:27.738401 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: reusing connection master sess: None, name: master, idle: 6.276118040084839s, acqrelcnt: 0, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094601.4622836
+[0m15:43:27.739699 [debug] [MainThread]: Databricks adapter: Thread (41524, 41392) using default compute resource.
+[0m15:43:27.739699 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: _acquire sess: None, name: master, idle: 6.277416467666626s, acqrelcnt: 1, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094601.4622836
+[0m15:43:27.740698 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: get_thread_connection: sess: None, name: master, idle: 6.278414726257324s, acqrelcnt: 1, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094601.4622836
+[0m15:43:27.740698 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: idle check connection: sess: None, name: master, idle: 6.278414726257324s, acqrelcnt: 1, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094601.4622836
+[0m15:43:27.741696 [debug] [MainThread]: On master: ROLLBACK
+[0m15:43:27.741696 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:43:28.136949 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: session opened sess: 01eeccd9-c05f-115c-bac2-a71c6b7222e0, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094608.1369498
+[0m15:43:28.136949 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m15:43:28.136949 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: get_thread_connection: sess: 01eeccd9-c05f-115c-bac2-a71c6b7222e0, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094608.1369498
+[0m15:43:28.136949 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: idle check connection: sess: 01eeccd9-c05f-115c-bac2-a71c6b7222e0, name: master, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094608.1369498
+[0m15:43:28.136949 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m15:43:28.136949 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m15:43:28.136949 [debug] [MainThread]: Databricks adapter: conn: 2720533311232: _release sess: 01eeccd9-c05f-115c-bac2-a71c6b7222e0, name: master, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (41524, 41392), cmpt: ``, lut: 1708094608.1369498
+[0m15:43:28.144778 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:43:28.145073 [debug] [MainThread]: On master: ROLLBACK
+[0m15:43:28.145073 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m15:43:28.146590 [debug] [MainThread]: On master: Close
+[0m15:43:28.257158 [debug] [MainThread]: Connection 'list_dbt-test' was properly closed.
+[0m15:43:28.257158 [debug] [MainThread]: On list_dbt-test: Close
+[0m15:43:28.386042 [debug] [MainThread]: Connection 'list_dbt-test_dbt-test-managed-tables' was properly closed.
+[0m15:43:28.386042 [debug] [MainThread]: On list_dbt-test_dbt-test-managed-tables: Close
+[0m15:43:28.476108 [debug] [MainThread]: Connection 'model.TEST.MOVIMENTI_OUTPUT' was properly closed.
+[0m15:43:28.477104 [debug] [MainThread]: On model.TEST.MOVIMENTI_OUTPUT: ROLLBACK
+[0m15:43:28.478450 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m15:43:28.478528 [debug] [MainThread]: On model.TEST.MOVIMENTI_OUTPUT: Close
+[0m15:43:28.653685 [info ] [MainThread]: 
+[0m15:43:28.655678 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 8.90 seconds (8.90s).
+[0m15:43:28.656679 [debug] [MainThread]: Command end result
+[0m15:43:28.701932 [info ] [MainThread]: 
+[0m15:43:28.701932 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:43:28.701932 [info ] [MainThread]: 
+[0m15:43:28.701932 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m15:43:28.709963 [debug] [MainThread]: Command `dbt run` succeeded at 15:43:28.709963 after 11.72 seconds
+[0m15:43:28.709963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002794AAFFBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002796C7C3E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002794AE00B90>]}
+[0m15:43:28.711392 [debug] [MainThread]: Flushing usage events
+[0m15:43:29.112262 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.

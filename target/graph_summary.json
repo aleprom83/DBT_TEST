@@ -1,0 +1,1 @@
+{"_invocation_id": "1e4944d8-5d3f-4f6a-83af-511e2beb6381", "linked": {"0": {"name": "model.TEST.MOVIMENTI_OUTPUT", "type": "model", "succ": [1, 2]}, "1": {"name": "test.TEST.unique_MOVIMENTI_OUTPUT_id.a6053b1232", "type": "test"}, "2": {"name": "test.TEST.not_null_MOVIMENTI_OUTPUT_id.a4ee4293bc", "type": "test"}}}
